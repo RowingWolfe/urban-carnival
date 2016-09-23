@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    background:url("http://i.huffpost.com/gen/1205182/images/o-GEORGE-CARLIN-facebook.jpg") no-repeat center top scroll;
+    background-size: 200% auto;
+}
+.head{
+    margin-top: 55px;
+    margin-left: 30px;
+    color: papayawhip;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 10px 10px 25px;
+    margin-right: 30%;
+
+}
