@@ -1,0 +1,17 @@
+html{
+    background: black;
+    background-image: url("http://1.bp.blogspot.com/_P6fTS83PZ-U/S_7oO3YJYYI/AAAAAAAADVg/-D3wVrpNoPU/s1600/CIMG3353.JPG");
+    background-size: 100%;
+}
+body{
+    background-color: rgba(0,0,0,0);
+
+}
+#quote-disp{
+    background-color: rgba(200,200,200,.7);
+    border-radius: 25px;
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+    padding-bottom: 25px;
+}

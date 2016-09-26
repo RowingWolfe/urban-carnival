@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotron</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="script.js"></script>
+<script>
+    ( function($) {
+        // we can now rely on $ within the safety of our "bodyguard" function
+        $(document).ready( function() {
+            //animation setup
+            $.fn.extend({
+                animateCss: function (animationName) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+                    });
+                }
+            });
+            $("#quote-btn").click(function () {
+                $("#quote").html(function () {
+                    return randomQuote();
+                });
+                $("#quote-disp").animateCss('bounce');
+            });
+        } );
+    } ) ( jQuery );
+
+</script>
+
+<script src="https://use.fontawesome.com/ebe2ad7e63.js"></script>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- //////////////////////////////////
+        Begin Working
+     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+<div class="container-fluid text-center quote-disp" id="quote-disp">
+    <div class="container-fluid text-center quote" id="quote">
+        <h2>Generate a quote, meatbag.</h2>
+    </div>
+    <div class="container-fluid author" id="author">
+
+    </div>
+    <button class="btn btn-block btn-success" id="quote-btn">
+        Generate
+    </button>
+    <button class="btn btn-block btn-info" id="twitter-share" onClick="window.open(shareOnTwitter());">
+        <i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter
+    </button>
+</div>
+
+
+</body>
+</html>
