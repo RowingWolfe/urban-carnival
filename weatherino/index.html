@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weatherino</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<script src="script.js"></script>
+<script src="https://use.fontawesome.com/ebe2ad7e63.js"></script>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                HTML START
+     //////////////////////////////////////////-->
+
+<div class="container-fluid text-center weather-disp" id="weather-disp">
+    <h1 class="weather-icon"><i class="fa fa-tint" aria-hidden="true"></i> Weatherino</h1>
+    <h4>...or how I learned to stop panicking and love stackoverflow.</h4>
+    <h1 class="temp" id="temp"> Temp Here (C/F Modifier)</h1>
+    <h2 class="sky"> Cloudy? </h2>
+    <!--<h3 class="data"></h3>-->
+    <br>
+    &deg;F<label class="switch">
+        <input type="checkbox" id="unitSelect" >
+        <div class="slider round"></div>
+    </label>&deg;C
+
+</div>
+</body>
+</html>
