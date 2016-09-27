@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seekipedia</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<script src="script.js"></script>
+<script src="https://use.fontawesome.com/ebe2ad7e63.js"></script>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+            HTML START
+     /////////////////////////////-->
+
+
+<h1 class="text-center">Seekipedia</h1>
+
+<div class="row">
+    <form id="input" onsubmit="search();return false;">
+        <input type="text" class="input-lg col-xs-12 col-sm-9 text-center" id="searchinput" placeholder="Dig up some info">
+        <button type="submit" class="btn btn-lg btn-primary col-xs-12 col-sm-3 text-center">Search</button>
+    </form>
+</div>
+
+<div class="row rolldice">
+    <h3 class="text-center">Or</h3>
+    <form class=" text-center">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-lg btn-primary col-xs-12" >Roll the Dice</a>
+    </form>
+</div>
+<div id="list" class="list-group">
+
+</div>
+<div id="article"></div>
+
+</body>
+</html>
